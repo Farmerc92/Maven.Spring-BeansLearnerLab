@@ -10,11 +10,11 @@ import java.util.ArrayList;
 @Configuration
 public class StudentsConfig {
 
-    @Bean(name = "currentStudents")
+    @Bean(name = "students")
     public Students currentStudents(){
         ArrayList<Student> currentStudents = new ArrayList<>();
         for (long i = 1; i < 31; i++) {
-            currentStudents.add(new Student(i, "Current Student " + i));
+            currentStudents.add(new Student(i, "Student " + i));
         }
         return new Students(currentStudents);
     }

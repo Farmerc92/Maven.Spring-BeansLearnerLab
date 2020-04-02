@@ -1,13 +1,12 @@
 package com.zipcodewilmington.BeansLearnerLab.education;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class Instructors extends People<Instructor> {
 
-    public Instructors(Instructor... instructors){
-        super(new ArrayList<>(Arrays.asList(instructors)));
+    public Instructors(ArrayList<Instructor> personList){
+        super(personList);
     }
 
     @Override
